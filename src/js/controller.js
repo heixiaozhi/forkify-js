@@ -132,6 +132,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const helloApp = function () {
+  console.log('Welcome to Application');
+};
+
 // 订阅者初始化
 const init = function () {
   bookmarksView.addHandlerBookmarks(controlBookmarks);
@@ -141,6 +145,6 @@ const init = function () {
   recipeView.addHandlerAddBookmark(controlAddBookmark);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Hello');
+  helloApp();
 };
 init();
